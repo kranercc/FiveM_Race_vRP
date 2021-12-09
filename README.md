@@ -6,7 +6,9 @@
 Race Script optimized 2021.
 
 > Easy to use
+
 > Easy to configure
+
 > ✨Contact: krane#2890✨
 
 ## Features
