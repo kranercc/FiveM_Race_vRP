@@ -1,0 +1,62 @@
+<!--
+DATE: 12.09.2021
+AUTHOR: KRANE IC (krane#2890)
+<!> <!> <!>
+! ROMANIA !
+<!> <!> <!> 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="details.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="page" id="container"> 
+        <div class="blurryBackground"></div>
+        <div class="cardBorders"> </div>
+        <h2 class="Title">Maps</h2>
+        <div class="maps" id="maps">
+            <div id="aeroportDiv">
+                <h2 class="mapTitle red">Aeroport</h2>
+                <img class="image maps button" src="images/lsairport.jpg" alt="image" id="btnAeroport">
+                <div id="game_mods" class="grid_game_mods"></div>
+            </div>   
+            <div id="vinewoodDiv">
+                <h2 class="mapTitle yellow">VINEWOOD</h2>
+                <img class="image maps button" src="images/vinewood.png" alt="image" id="btnVinewood">
+                <div id="game_mods_vinewood" class="grid_game_mods"></div>
+            </div>   
+            
+            <div id="sandyDiv">
+                <h2 class="mapTitle blue">Sandy</h2>
+                <img class="image maps button" src="images/sandy.jpg" alt="image" id="btnSandy">
+                <div id="game_mods_sandy" class="grid_game_mods"></div>
+            </div>   
+        </div>
+        <br/>
+
+        <div class="details" id="details">
+            <div class="details_overlay"></div>
+            <h1 class="Title"> Lobby </h1>
+            <div class="PlayerSelector" id="playerSelector">
+                <textarea class="textfield" id="playerSelectorText" rows="1" cols="20" placeholder="Player ID"></textarea>
+                <textarea class="textfield" id="moneybet" rows="1" cols="20" placeholder="Money"></textarea>
+                <button id="playerInviteButton" class="button text">Invite</button>
+                <button id="playerKickButton" class="button text">Kick</button>
+            </div>
+            <div class="PlayerList" id="playerList">
+                <div class="player_info_header">
+                    <h2 class="Title">ID</h2>
+                    <h2 class="Title">Players</h2>
+                    <h2 class="Title">Bet</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>

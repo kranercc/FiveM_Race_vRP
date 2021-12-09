@@ -1,0 +1,73 @@
+.PlayerSelector {
+    /* this is a grid of maps */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.textfield {
+    /* make it beautiful */
+    border-radius: 4px;
+    padding: 6px 12px;
+    width: 50%;
+    background-color: #6b6bdb;
+    color: #242429;
+    outline:none;
+    box-sizing:border-box;
+    transition:.3s;
+    font-size: larger;
+    
+}
+
+::placeholder {
+    color: #242429;
+}
+
+.textfield:focus {
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+}
+
+.PlayerList {
+    /* this is a grid of players with 3 columns and infinite rows */
+
+}
+
+.playerInfo {
+    /* display in a column like the info */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* make it look like a table */
+    border-bottom: 1px solid #8787c8;
+    border-top: 1px solid #8787c8;
+}
+
+.player_data {
+    color: #8787c8;
+}
+
+
+.details_overlay {
+    /* this is the overlay that appears when you click on a player */
+    position: fixed;
+    height: 300px;
+    width: 1080px;
+    z-index: -1;
+    background-color: rgb(41, 41, 41);
+    opacity: 0.5;
+    filter: blur(5px);
+}
+
+.player_info_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
